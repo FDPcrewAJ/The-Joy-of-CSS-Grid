@@ -1,0 +1,110 @@
+.extra-grid {
+    height: 90vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 
+    '1 8 9 16'
+    '2 7 10 15'
+    '3 6 11 14'
+    '4 5 12 13';
+    --delay: 500ms;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(360deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card {
+    background-color:#2EB5C7;
+    animation: cardEntrance 2000ms ease-out;
+    animation-fill-mode: backwards;
+}
+
+.card:nth-child(1) {
+    grid-area: 1;
+    animation-delay: calc(1 * var(--delay));
+}
+
+.card:nth-child(2) {
+    grid-area: 2;
+    animation-delay: calc(2 * var(--delay));
+}
+
+.card:nth-child(3) {
+    grid-area: 3;
+    animation-delay: calc(3 * var(--delay));
+}
+
+.card:nth-child(4) {
+    grid-area: 4;
+    animation-delay: calc(4 * var(--delay));
+}
+
+.card:nth-child(5) {
+    grid-area: 5;
+    animation-delay: calc(5 * var(--delay));
+}
+
+.card:nth-child(6) {
+    grid-area: 6;
+    animation-delay: calc(6 * var(--delay));
+}
+
+.card:nth-child(7) {
+    grid-area: 7;
+    animation-delay: calc(7 * var(--delay));
+}
+
+.card:nth-child(8) {
+    grid-area: 8;
+    animation-delay: calc(8 * var(--delay));
+}
+
+.card:nth-child(9) {
+    grid-area: 9;
+    animation-delay: calc(9 * var(--delay));
+}
+
+.card:nth-child(10) {
+    grid-area: 10;
+    animation-delay: calc(10 * var(--delay));
+}
+
+.card:nth-child(11) {
+    grid-area: 11;
+    animation-delay: calc(11 * var(--delay));
+}
+
+.card:nth-child(12) {
+    grid-area: 12;
+    animation-delay: calc(12 * var(--delay));
+}
+
+.card:nth-child(13) {
+    grid-area: 13;
+    animation-delay: calc(13 * var(--delay));
+}
+
+.card:nth-child(14) {
+    grid-area: 14;
+    animation-delay: calc(14 * var(--delay));
+}
+
+.card:nth-child(15) {
+    grid-area: 15;
+    animation-delay: calc(15 * var(--delay));
+}
+
+.card:nth-child(16) {
+    grid-area: 16;
+    animation-delay: calc(16 * var(--delay));
+}
