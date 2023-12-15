@@ -19,6 +19,11 @@
         transform: scale(0.3);
         filter: hue-rotate(360deg);
     }
+    90% {
+        opacity: 1;
+        transform: scale(1.1);
+        filter: hue-rotate(0deg);
+    }
     to {
         opacity: 1;
         transform: scale(1);
